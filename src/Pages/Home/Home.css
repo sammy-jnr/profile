@@ -1,0 +1,27 @@
+.homeContainer {
+  max-width: 100%;
+  overflow: hidden;
+}
+  #wave1Container{
+    background-image: url(../../Assets/Images/wave1.svg);
+    background-size: cover;
+    max-height: 150px;
+    min-height: 50px;
+  }
+
+
+@media screen and (min-width: 481px) {
+  #wave1Container{
+    max-height: 150px;
+    min-height: 100px;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+
+  #wave1Container{
+    height: 200px;
+    max-height: 200px;
+  }  
+}

@@ -1,0 +1,182 @@
+.firstPage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.firstPageInner {
+  /* text-align: center; */
+  width: 80%;
+  position: relative;
+  transform: translateY(-50px);
+}
+
+.hi {
+  font-size: 4em;
+  color: white;
+  transition: all 500ms;
+  text-align: center;
+  text-shadow: 5px 5px 20px white;
+}
+
+.welcomeText {
+  font-size: 2.5em;
+  color: white;
+  transition: all 500ms;
+  opacity: 0;
+  text-align: center;
+  text-shadow: 5px 5px 20px white;
+}
+
+.Typewriter {
+  color: white;
+  font-size: 25px;
+}
+
+.typewriterSecondLine {
+  font-size: 21px;
+}
+
+.typewriterRef {
+  display: none;
+}
+
+
+.extraInfo {
+  margin: 20px 0;
+  transform: translateY(-100vh);
+  transition: all 2000ms;
+  max-width: 800px;
+  color: #c2c2c2;
+}
+
+.ctaDiv {
+  transform: translateY(-100vh);
+  transition: all 2000ms;
+  margin-top: 40px;
+}
+
+.ctaDiv button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  box-shadow: 0px 4px #787878;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.ctaDiv button:hover {
+  box-shadow: 0 3px #787878;
+  top: 1px;
+}
+
+.ctaDiv button:active {
+  box-shadow: 0 0 #787878;
+  top: 5px;
+}
+
+@media screen and (min-width: 481px) {
+
+  .hi {
+    font-size: 5em;
+  }
+
+  .welcomeText {
+    font-size: 3em;
+  }
+
+  .Typewriter {
+    font-size: 35px;
+  }
+
+  .typewriterSecondLine {
+    font-size: 28px;
+  }
+
+  .extraInfo {
+    font-size: 18px;
+  }
+
+  .ctaDiv {
+    transform: translateY(-100vh);
+    transition: all 2000ms;
+    margin-top: 70px;
+  }
+
+  .ctaDiv button {
+    padding: 15px 40px;
+    font-size: 17px;
+  }
+
+  .ctaDiv button:hover {
+    transform: translateY(5px);
+    box-shadow: 1px 1px rgb(120, 120, 120);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 789px) {
+
+  .hi {
+    font-size: 5.5em;
+  }
+
+  .welcomeText {
+    font-size: 3.5em;
+  }
+
+  .Typewriter {
+    font-size: 45px;
+  }
+
+  .typewriterSecondLine {
+    font-size: 32px;
+  }
+
+  .extraInfo {
+    font-size: 19px;
+  }
+
+  .ctaDiv {
+    margin-top: 75px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  .hi {
+    font-size: 6.5em;
+  }
+
+  .welcomeText {
+    font-size: 4.5em;
+  }
+
+  .Typewriter {
+    font-size: 60px;
+  }
+
+  .typewriterSecondLine {
+    font-size: 35px;
+  }
+
+  .extraInfo {
+    font-size: 20px;
+  }
+
+  .ctaDiv {
+    margin-top: 85px;
+  }
+
+  .ctaDiv button {
+    padding: 15px 40px;
+    font-size: 18px;
+  }
+}

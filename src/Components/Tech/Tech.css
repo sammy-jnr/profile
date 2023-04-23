@@ -1,0 +1,97 @@
+.technologies {
+  background-color: white;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.technologiesInner {
+  background-color: whitesmoke;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  top: -40px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  box-shadow:
+    2.2px 2.7px 2.2px rgba(0, 0, 0, 0.051),
+    5.2px 6.4px 5.3px rgba(0, 0, 0, 0.074),
+    9.8px 12px 10px rgba(0, 0, 0, 0.086),
+    17.4px 21.4px 17.9px rgba(0, 0, 0, 0.089),
+    32.6px 40.1px 33.4px rgba(0, 0, 0, 0.085),
+    78px 96px 80px rgba(0, 0, 0, 0.07);
+}
+
+.technologiesInner header {
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+.techItemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.techItems {
+  width: 70px;
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.techitem1,
+.techitem2,
+.techitem6,
+.techitem7 {
+  transition: all 1000ms;
+}
+
+.techitem3,
+.techitem11,
+.techitem10,
+.techitem4 {
+  transition: all 1200ms;
+}
+
+.techitem5,
+.techitem8,
+.techitem9 {
+  transition: all 1300ms;
+}
+
+.techImgs {
+  max-width: 35px;
+  aspect-ratio: 1/1;
+}
+
+.technames {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 789px) {
+  .technologiesInner header {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .techItems {
+    width: 100px;
+    min-width: fit-content;
+    padding: 25px;
+  }
+
+  .techImgs {
+    max-width: 40px;
+  }
+
+  .technames {
+    font-size: 20px;
+  }
+
+}

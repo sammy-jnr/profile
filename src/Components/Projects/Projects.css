@@ -1,0 +1,266 @@
+.projects {
+  width: 95%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.projects>header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 70px;
+}
+
+.moreInfoBigScreens {
+  display: none;
+}
+
+
+
+.githubIcon {
+  width: 20px;
+  margin-right: 30px;
+}
+
+.webIcon {
+  width: 13px;
+  margin-left: 15px;
+}
+
+.downArrow {
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.projectItems {
+  margin: 50px 0px;
+}
+
+.projectItemsMainSection {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  position: relative;
+}
+
+.projectItemsImgSection {
+  height: 150px;
+  margin-right: 15px;
+}
+
+.projectItemsImgSection img {
+  width: 100px;
+  height: 150px;
+  max-height: 150px;
+  border-radius: 10px;
+}
+
+.projectItemsTextSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectItemsTextSection header {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: black;
+}
+
+.projectItemsTextSection p {
+  margin: 10px 0;
+  margin-bottom: 30px;
+  color: #343434;
+}
+
+.projectButtons {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+
+.projectButtons button {
+  height: 30px;
+  padding: 5px 15px;
+  background-color: black;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.574);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.moreInfoSmallerDevices {
+  margin: 30px 10px;
+}
+
+.swiper {
+  height: 650px;
+}
+
+.projectImages {
+  max-width: 100%;
+  max-height: 600px;
+  transform: translateY(-10px);
+}
+
+.slides {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(218, 218, 218);
+  border-radius: 5px 5px 5px 5px;
+  cursor: grab;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #343434 !important;
+}
+
+.swiper-button-next {
+  width: 50px !important;
+  height: 500px !important;
+  position: absolute !important;
+  top: 50px !important;
+  right: 0 !important;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  width: 50px !important;
+  height: 500px !important;
+  position: absolute !important;
+  top: 50px !important;
+  left: 0 !important;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.moreInfoIcon {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.bigScreen{
+  display: none !important;
+}
+.smallScreen{
+  display: block !important;
+}
+
+@media screen and (min-width: 481px) {}
+
+@media screen and (min-width: 789px) {
+  .projectButtons button:hover {
+    background-color: rgb(39, 41, 60);
+    color: white;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.574);
+    transition: all 0.3s;
+    transform: translateY(-1px);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+.bigScreen{
+  display: block !important;
+}
+.smallScreen{
+  display: none !important;
+}
+  .moreInfoIcon,
+  .moreInfoSmallerDevices {
+    display: none;
+  }
+
+  .moreInfoBigScreens {
+    display: block;
+  }
+
+  .projects {
+    max-width: 1400px;
+  }
+  .projects > header {
+    font-size: 3em;
+    padding: 100px;
+    padding-bottom: 50px;
+  }
+
+  .projectItems {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+  .projectItems:nth-child(even) > div:first-of-type{
+    order: 2;
+  }
+
+  .projectItemsMainSection {
+    width: 50%;
+    min-width: 400px;
+    background-color: transparent;
+    align-items: baseline;
+  }
+ 
+  .projectItemsTextSection header{
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  .projectItemsTextSection p {
+    margin: 0;
+    font-size: 19px;
+    max-width: 500px;
+  }
+  .projectButtons{
+    margin-top: 100px;
+  }
+  .projectImagesDiv {
+    width: 50%;
+    max-width: calc(100% - 500px);
+  }
+  .slides{
+    background-color: transparent;
+    padding: 0 30px;
+    /* align-items: baseline; */
+
+  }
+  .projectImages {
+    transform: translateY(0px);
+    border-radius: 10px;
+    max-height: 590px;
+  }
+ 
+  .projectItemsImgSection {
+    display: none;
+  }
+
+  .downArrow {
+    display: none;
+  }
+}
