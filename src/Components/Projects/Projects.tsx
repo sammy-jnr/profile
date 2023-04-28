@@ -56,7 +56,9 @@ const Projects = (props: ProjectPropsInterface) => {
         {
           projects.map((project, index) => {
             return <div className='projectItems'>
-              <div className="projectItemsMainSection">
+              <div className="projectItemsMainSection"
+                onClick={() => toggleImages(index)}
+              >
                 <div className="projectItemsImgSection">
                   <img src={require(`../../Assets/Images/Thumbnails/${project.thumbnail}.png`)} alt="" />
                 </div>
@@ -65,15 +67,17 @@ const Projects = (props: ProjectPropsInterface) => {
                   <p>{project.description}</p>
                   <p className='moreInfoBigScreens'>{project.extraDetails}</p>
                   <div className="projectButtons">
-                    <a href={project.githubLink} target='_blank' rel='noreferrer'><img src={githubIcon} alt="" className="githubIcon hoverable" /></a>
-                    <a href={project.websiteLink} target='_blank' rel='noreferrer'>
+                    <a href={project.githubLink} target='_blank' rel='noreferrer'
+                      onClick={() => toggleImages(index)}
+                    ><img src={githubIcon} alt="" className="githubIcon hoverable" /></a>
+                    <a href={project.websiteLink} target='_blank' rel='noreferrer'
+                      onClick={() => toggleImages(index)}
+                    >
                       <button>VISIT  <img src={webIcon} alt="" className="webIcon" /></button>
                     </a>
                   </div>
                 </div>
-                <img src={showImages[index] ? arrowUp : downArrow} alt="" className="moreInfoIcon hoverable"
-                  onClick={() => { toggleImages(index) }}
-                />
+                <img src={showImages[index] ? arrowUp : downArrow} alt="" className="moreInfoIcon hoverable" />
               </div>
               <div className="projectImagesDiv bigScreen">
                 <p className="moreInfoSmallerDevices smallScreen">{project.extraDetails}</p>

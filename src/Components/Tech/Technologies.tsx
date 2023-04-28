@@ -42,7 +42,6 @@ const Technologies = (props: Props) => {
   const intersectionCallback = (entries: IntersectionObserverEntry[]) => {
     const [entry] = entries
     setinView(entry.isIntersecting)
-    console.log(entry.isIntersecting)
   }
 
   const inViewStyle = {

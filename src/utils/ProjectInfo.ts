@@ -28,8 +28,8 @@ export const projects = [
   },
   {
     name: "Space Info",
-    description:'This is a simple front-end project with "space" theme.',
-    extraDetails: "",
+    description:'This is a simple, stunning front-end project with basic info about space.',
+    extraDetails: "The website's homepage boasts a visually appealing and sophisticated design while providing Interesting details about space. \n Additionally, visitors can access the crew page, destination page, and technology page. \nFurthermore, the website includes information about various planetary bodies.",
     githubLink: "https://github.com/sammy-jnr/space",
     websiteLink: "https://explorespaceinfo.netlify.app",
     images: ["spaceFirstImage","spaceInfoSmall","spaceInfoLarge","spaceHomeLarge","spaceHomeSmall"],

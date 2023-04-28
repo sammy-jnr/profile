@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <div className='homeContainer'>
       <Navigation showNav={showNav} navRef={navRef} currentPage={currentPage} scrollToFunction={scrollToFunction} />
-      <Firstpage setcurrentPage={setcurrentPage} pageRef={homeHeaderRef} />
+      <Firstpage setcurrentPage={setcurrentPage} pageRef={homeHeaderRef} contactHeaderRef={contactHeaderRef}/>
       <Technologies />
       <Projects setcurrentPage={setcurrentPage} pageRef={projectHeaderRef} />
       <div id="wave1Container">

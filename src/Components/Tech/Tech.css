@@ -49,20 +49,20 @@
 .techitem2,
 .techitem6,
 .techitem7 {
-  transition: all 1000ms;
+  transition: all 300ms;
 }
 
 .techitem3,
 .techitem11,
 .techitem10,
 .techitem4 {
-  transition: all 1200ms;
+  transition: all 400ms;
 }
 
 .techitem5,
 .techitem8,
 .techitem9 {
-  transition: all 1300ms;
+  transition: all 500ms;
 }
 
 .techImgs {

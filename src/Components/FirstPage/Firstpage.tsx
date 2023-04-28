@@ -4,9 +4,10 @@ import "./FirstPage.css"
 interface HomePropsInterface {
   setcurrentPage: React.Dispatch<React.SetStateAction<string>>
   pageRef: React.MutableRefObject<HTMLDivElement | null>
+  contactHeaderRef: React.MutableRefObject<HTMLDivElement | null>
 }
 
-const Firstpage = (props:HomePropsInterface) => {
+const Firstpage = (props: HomePropsInterface) => {
 
   const hiRef = useRef<HTMLDivElement | null>(null)
   const welcomeRef = useRef<HTMLDivElement | null>(null)
@@ -68,8 +69,8 @@ const Firstpage = (props:HomePropsInterface) => {
 
   useEffect(() => {
     const homeObserver = new IntersectionObserver(intersectionCallback, basicObserverOptions)
-    if(homeSectionRef.current)
-    homeObserver.observe(homeSectionRef.current)
+    if (homeSectionRef.current)
+      homeObserver.observe(homeSectionRef.current)
   }, []);
 
   const basicObserverOptions = {
@@ -80,7 +81,7 @@ const Firstpage = (props:HomePropsInterface) => {
 
   const intersectionCallback = (entries: IntersectionObserverEntry[]) => {
     const [entry] = entries
-    if(entry.isIntersecting){
+    if (entry.isIntersecting) {
       props.setcurrentPage("home")
     }
   }
@@ -89,10 +90,10 @@ const Firstpage = (props:HomePropsInterface) => {
   return (
     <section className='firstPage' ref={homeSectionRef}>
       <div ref={props.pageRef}
-      style={{
-        position: "absolute",
-        top: 0
-      }}
+        style={{
+          position: "absolute",
+          top: 0
+        }}
       ></div>
       <div className="firstPageInner">
         <div className="hi" ref={hiRef}>Hey there</div>
@@ -105,7 +106,11 @@ const Firstpage = (props:HomePropsInterface) => {
           Take a look at my projects below to see some of the amazing things I've created. <br /> If you're interested in working with me, feel free to get in touch
         </div>
         <div className="ctaDiv" ref={CTARef}>
-          <button>Contact me</button>
+          <button
+            onClick={() => {
+              props.contactHeaderRef.current?.scrollIntoView({ behavior: "smooth" })
+            }}
+          >Contact me</button>
         </div>
 
       </div>

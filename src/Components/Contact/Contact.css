@@ -4,7 +4,10 @@
   background-color: #202020;
   color: whitesmoke;
 }
-
+form{
+  all: unset;
+  /* width: 100%; */
+}
 
 .contactPage header {
   padding: 20px;
@@ -51,6 +54,7 @@
   border-radius: 30px;
   padding-bottom: 20px;
   max-width: 500px;
+  position: relative;
 }
 
 .contactFormInputs {
@@ -84,6 +88,20 @@
   border-radius: 30px;
   color: whitesmoke;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.712);
+}
+.emailError{
+  margin: 15px;
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+.emailSubmittedText{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  color: green;
 }
 
 @media screen and (min-width: 481px) {
