@@ -39,15 +39,28 @@ const About = (props: AboutPropsInterface) => {
           <img src={profileImg} alt="" className='profileImg' />
         </div>
         <div className="aboutText">
-          <p>
-            Hi, I am Umeh Wisdom, a self-taught full-stack web developer based in Nigeria, currently moving to canada to study Computer Science. <br /> I started coding in 2020 during the COVID-19 pandemic and quickly fell in love with the process of creating websites and web applications. Since then, I have been passionate about improving my skills and knowledge in the field.
-          </p>
+          <h3>About Me</h3>
+          <p>Hello, I'm Umeh Wisdom, a first-year Computer Science student at the University of Prince Edward Island, Canada. My journey into the world of technology is a unique one. Originally, I was pursuing mechanical engineering at the University of Nigeria. However, during a lengthy strike in 2020, coinciding with the COVID-19 pandemic, I discovered my passion for coding. It all began with web development—learning HTML, CSS, and JavaScript. I soon realized my love for coding and decided to delve deeper.</p>
+          <p>After extensive research, I made the life-changing decision to switch to computer science. In 2022, I successfully applied to UPEI, where I am currently honing my skills.</p>
           <br />
-          <p>Over time, I have found a deep passion for web development and the limitless possibilities it presents. Beyond coding, I enjoy a variety of activities that challenge my mind, including gaming, puzzles, and chess. In fact, my Elo rating of 1650 on chess.com places me in the top 2% of players on the platform. As a web3 and crypto enthusiast, I am constantly researching new projects and ideas in the crypto space, as well as staying up-to-date with the latest technological developments such as Artificial Intelligence. <br /> Above all, I value meaningful conversations with new people, learning from them and exchanging ideas in a collaborative manner.</p>
+          <h3>Interests Beyond Code</h3>
+          <p>In my free time, I indulge in various interests. I'm an avid chess player and enjoy both playing and watching chess streams. Additionally, I have a knack for table tennis, find solace in reading manga, and occasionally delve into the world of anime. When I'm not immersed in these activities, I'm keeping a close eye on the ever-evolving tech landscape. Discovering and dissecting new technologies, like the fascinating Bun v1.0, is something I find immensely engaging. What drew me into computer science was the incredible power it grants to bring imagination to life with minimal cost—time being the primary investment.</p>
           <br />
-          <p>
-            As a developer, I am a great communicator and team player. I believe in the power of collaboration and am always open to feedback and constructive criticism. I am also highly motivated and committed to delivering quality work on time. With my skills and interests, I believe I would be a great fit for any team looking to build innovative solutions in the web development and tech space.
-          </p>
+          <h3>Continuous learning and projects</h3>
+          <p>In my coding journey, I make it a point to embrace new challenges. With each project, I strive to incorporate a fresh piece of technology, be it a library or framework, to broaden my skill set. While I've witnessed significant improvement, I also recognize that the more I learn, the more I discover how vast the world of technology truly is. The learning process, although at times frustrating, remains an enjoyable adventure.</p>
+          <br />
+          <h3>Notable Projects</h3>
+          <p>A few projects have stood out in my journey. "Rock, Paper, Scissors" was a milestone as it introduced me to web sockets, shedding light on the mechanics behind the connections we often take for granted. "Matched" was another favorite, combining practicality and excitement.</p>
+          <br />
+          <h3>Teamwork and Future Goals</h3>
+          <p>While most of my work has been individual projects, I eagerly anticipate expanding my experience by collaborating with others on larger-scale initiatives during my time at UPEI. My ultimate goal is to master the complexities of computer science, and I find great joy in the realm of mathematics.</p>
+          <br />
+          <h3>Gratitude and Contact</h3>
+          <p>Thank you for taking the time to get to know me. If you'd like to connect or have any questions, please reach out through the contact information provided at the bottom of this page.</p>
+          <br />
+          <p>Don't forget to explore my projects, including "Guess the," a trivia game you'll surely enjoy.</p>
+          <br />
+          <br />
         </div>
       </div>
 

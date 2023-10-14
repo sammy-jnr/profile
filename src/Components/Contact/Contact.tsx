@@ -40,11 +40,11 @@ const Contact = (props: ContactPropsInterface) => {
   }
 
   const submit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     if (!nameRef.current?.value || !emailRef.current?.value || !messageRef.current?.value) {
       setshowEmailError(true);
       return;
     }
-    e.preventDefault();
 
     const form = e.target as HTMLFormElement;
     const data = new FormData(form);

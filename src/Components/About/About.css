@@ -38,6 +38,10 @@
   position: absolute;
   top: -100px;
 }
+.aboutText h3{
+  padding-bottom: 3px;
+  color: #1e1e1e;
+}
 
 @media screen and (min-width: 1025px) {
   .about > header{
