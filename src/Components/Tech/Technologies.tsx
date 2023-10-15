@@ -20,29 +20,29 @@ const Technologies = (props: Props) => {
 
   const techRef = useRef<HTMLDivElement | null>(null)
 
-  const [inView, setinView] = useState<boolean>(false);
+  const [inView, setinView] = useState<boolean>(true);
 
-  useEffect(() => {
-    if (!techRef.current) return
-    const ref = techRef.current
-    const observer = new IntersectionObserver(intersectionCallback, basicObserverOptions)
-    observer.observe(ref)
+  // useEffect(() => {
+  //   if (!techRef.current) return
+  //   const ref = techRef.current
+  //   const observer = new IntersectionObserver(intersectionCallback, basicObserverOptions)
+  //   observer.observe(ref)
 
-    return () => {
-      observer.unobserve(ref)
-    }
-  }, []);
+  //   return () => {
+  //     observer.unobserve(ref)
+  //   }
+  // }, []);
 
-  const basicObserverOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.2
-  }
+  // const basicObserverOptions = {
+  //   root: null,
+  //   rootMargin: "0px",
+  //   threshold: 0.2
+  // }
 
-  const intersectionCallback = (entries: IntersectionObserverEntry[]) => {
-    const [entry] = entries
-    setinView(entry.isIntersecting)
-  }
+  // const intersectionCallback = (entries: IntersectionObserverEntry[]) => {
+  //   const [entry] = entries
+  //   setinView(entry.isIntersecting)
+  // }
 
   const inViewStyle = {
     transform: "translateX(0)"
